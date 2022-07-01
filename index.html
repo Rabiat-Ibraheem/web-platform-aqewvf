@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>QR Code Generator Project</title>       
+    <title>QR Code Generator Project</title>  
+    <link rel ="stylesheet" href="styles.css">     
     <script src="qrcode.min.js"></script>
     <script>
         var qrcode = undefined;
@@ -18,8 +19,8 @@
   <body>
     <h1> QR Code Generator </h1> 
     <div>
-      <label>Text: </label>
-      <input name="qr code" type="text" onchange="generateQRCode(this.value)"/>
+      <label> <strong>Text: </strong> </label>
+      <input name="qrcode" placeholder="Enter text or url" type="text" onchange="generateQRCode(this.value)"/>
     </div>
     <br/>
     <div>
